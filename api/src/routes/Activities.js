@@ -1,13 +1,25 @@
 const { Router } = require('express');
-const axios = require('axios')
-const {conn, Country, Activity } = require('../db.js');
-const {Op} = require('sequelize')
-// Importar todos los routers;
-// Ejemplo: const authRouter = require('./auth.js');
+const {Country, Activity } = require('../db.js');
 
 const router = Router();
-router.post('/', (req, res, next) => {
-    res.send('post de countries') 
+router.post('/', async (req, res, next) => {
+    try {
+        const{name, difficulty, duration, season, country} = req.body;
+        let create = await Activity.create({//create done, findOrCreate crash
+            name,
+            difficulty,
+            duration,
+            season
+        })
+        let searchCountry = await Country.findAll({//busco el pais en mi db
+            where: {name: country}
+        })
+        create.addCountry(searchCountry)
+        res.send('done')
+        
+    } catch (err) {
+        next(err)
+    }
 })
 
 
