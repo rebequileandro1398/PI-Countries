@@ -1,0 +1,15 @@
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000006c; 
+    width: 13rem;
+    align-content: center;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    text-align: center;
+    backdrop-filter: blur(.5rem);
+    transition: color 0.2s linear 0.2s;
+}
