@@ -1,5 +1,5 @@
 import React from "react";
-
+import styles from './StylesComponents/Paginado.module.css'
 const Posts = ({postsPerPage, totalPosts, paginado}) => {
 
     const pageNumber = [];
@@ -8,15 +8,15 @@ const Posts = ({postsPerPage, totalPosts, paginado}) => {
     }
 
     return (
-       <nav>
+       <div className={styles.pag}>
            {
                pageNumber?.map(number => (
                   <ul style={{listStyle:"none"}} key={number}>
-                    <li onClick={()=> paginado(number)}>{number}</li>
+                    <button className={styles.button} onClick={()=> paginado(number)}>{number}</button>
                  </ul> 
                ))
            }
-       </nav>
+       </div>
     )
 }
 

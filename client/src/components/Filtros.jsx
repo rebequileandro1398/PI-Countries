@@ -2,7 +2,7 @@ import { ContinentsFilter, GetAllActivities, SortByName,} from "../store/actions
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
-
+import styles from './StylesComponents/Filtros.module.css'
 export default function Filtros() {
 
     let dispatch = useDispatch()
@@ -19,20 +19,20 @@ export default function Filtros() {
         dispatch(ContinentsFilter(e.target.value))
     }
 
-    return <div>
+    return <div className={styles.filtros}>
                 <div>
-                    <Link to= '/home/activity/all'>
-                            <button>Tourist Activities</button>
+                    <Link className={styles.textlink} to= '/home/activity/all'>
+                            <button className={styles.button}>Tourist Activities</button>
                     </Link>
               </div>
                 <div>
-                    <Link to= '/home/activity/create'>
-                        <button>Create Activity</button>
+                    <Link className={styles.textlink} to= '/home/activity/create'>
+                        <button className={styles.button}>Create Activity</button>
                     </Link>
               </div>
           <div>
-          Continents: <br/>
-           <select onChange={e => handleContinents(e)}>
+          Continents: 
+           <select  className={styles.select} onChange={e => handleContinents(e)}>
                <option value="all">All</option>
                <option value="North America">North America</option>
                <option value="South America">South America</option>
@@ -45,8 +45,8 @@ export default function Filtros() {
        </div>
 
        <div>
-       Sort from: <br/>
-           <select onChange={e => handleSortByName(e)}> 
+       Sort from: 
+           <select className={styles.select} onChange={e => handleSortByName(e)}> 
                <option value="asc">A - Z</option>
                <option value="desc">Z - A</option>
                <option value="max">higher population</option>

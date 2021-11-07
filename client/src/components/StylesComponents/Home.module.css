@@ -1,9 +1,27 @@
 .home{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+.navBar{
+    display: flex;
+    background-color: #416c7cc7;
+    backdrop-filter: blur(.5rem);
 }
 
-
 .cards {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: .5rem;
+}
+.paginado {
     display: flex;
     justify-content: space-evenly;
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin: auto;
 }

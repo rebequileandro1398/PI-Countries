@@ -1,0 +1,17 @@
+.activities{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 4rem;
+    background-color: #6b909e69; 
+    border-radius: 0.5rem;
+    text-align: center;
+    backdrop-filter: blur(.5rem);
+    color: #4c666e;
+}

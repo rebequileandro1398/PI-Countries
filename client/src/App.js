@@ -6,12 +6,12 @@ import Details from './components/Details';
 import Activities from './components/Activity';
 import CreateActivity from './components/CreateActivity';
 import AllActivities from './components/AllActivities';
-
+import style from './App.module.css'
 
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
+    <div className={style.App}>
       <Switch>
         <Route exact path= '/' component={LandingPage}/>
         <Route exact path= '/home'  component={Home}/>

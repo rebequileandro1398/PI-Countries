@@ -1,0 +1,16 @@
+.pag {
+    display: flex;
+}
+.button {
+    background-color: #416c7cc7;
+    margin: -4.8em;
+    width: 2rem;
+    border: none;
+    border-radius: 20%;
+    color:#000000;
+    backdrop-filter: blur(.5rem);
+}
+.button:hover{
+    background-color: #171f228f;
+    color: white;
+}

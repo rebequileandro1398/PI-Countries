@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useDispatch } from "react-redux"
 import { getCountrieByQuery } from "../store/actions"
-
+import styles from './StylesComponents/SearchBar.module.css'
 
 export default function SearchBar() {
     
@@ -17,9 +17,9 @@ export default function SearchBar() {
         setSearch(e.target.value)
     }
 
-    return <div>
+    return <div className={styles.searchBar}>
         <form onSubmit={handleSubmit}>
-            <input type="text" value={search} onChange={handleChange} />
+            <input className={styles.input} type="text" value={search} onChange={handleChange} />
         </form>
     </div>
 }

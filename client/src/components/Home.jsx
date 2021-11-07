@@ -7,6 +7,8 @@ import SearchBar from "./SearchBar";
 import Paginado from "./Paginado";
 import getCountries from "../store/actions";
 import styles from './StylesComponents/Home.module.css'
+import linkedin from '../img/linkedin.png'
+import github from '../img/github.png'
 
 
 export default function Home() {
@@ -28,12 +30,19 @@ export default function Home() {
     }
 
     return <div className={styles.home}>
-        <div>
+        <div className={styles.navBar}>
             <SearchBar/>
-        </div>
-
-        <div>
-             <Filtros/>
+            <div>
+                 <Filtros/>
+            </div>
+            <div className={styles.links}>
+                <a href='https://www.linkedin.com/in/leandro-rebequi-a26484187/' target='_blank'>
+                    <img src={linkedin} alt='image not found' style={{width:'2rem'}} />
+                </a>
+                <a href='https://github.com/rebequileandro1398' target='_blank'>
+                     <img src={github} alt='image not found'style={{width:'2rem'}} />
+                </a>
+            </div>
         </div>
 
        <div className={styles.cards}>
@@ -64,7 +73,7 @@ export default function Home() {
              })
             }
         </div>
-        <div>
+        <div className={styles.paginado}>
             {
             getAll.length / postPerPage > 1 &&
                 <Paginado

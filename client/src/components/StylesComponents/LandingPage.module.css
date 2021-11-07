@@ -1,0 +1,28 @@
+.landing{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b909e69; 
+    padding: 10rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 5rem;
+    backdrop-filter: blur(.5rem);
+    color: #4c666e;
+}
+.button{
+    background-color: #729ba7;
+    border: none;
+    border-radius: 1rem;
+    color:#000000;
+    padding: .7rem;
+    margin: 1rem;
+}
+.button:hover{
+    background-color: #171f228f;
+    color: white;
+}
