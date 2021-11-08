@@ -8,7 +8,7 @@ export default function LandingPage() {
             <div className={styles.landing}>
                 <h1>PI-COUNTRIES</h1>
                 <Link to= '/home'> 
-                    <button className={styles.button}>SIGN IN</button>
+                    <button className={styles.button}>GET STARTED</button>
                 </Link>
             </div>
 

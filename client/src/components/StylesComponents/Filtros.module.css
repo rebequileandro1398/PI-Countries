@@ -35,5 +35,12 @@
     .filtros{
         display: flex;
     }
-    
+    .span{
+        display: none;
+    }    
+}
+@media (max-width: 1200px) {
+    .span{
+        display: none;
+    }    
 }

@@ -31,7 +31,7 @@ export default function Filtros() {
                     </Link>
               </div>
           <div>
-          Continents: 
+             <span className={styles.span}> Continents: </span>
            <select  className={styles.select} onChange={e => handleContinents(e)}>
                <option value="all">All</option>
                <option value="North America">North America</option>
@@ -45,7 +45,7 @@ export default function Filtros() {
        </div>
 
        <div>
-       Sort from: 
+            <span className={styles.span}> Sort from: </span>
            <select className={styles.select} onChange={e => handleSortByName(e)}> 
                <option value="asc">A - Z</option>
                <option value="desc">Z - A</option>

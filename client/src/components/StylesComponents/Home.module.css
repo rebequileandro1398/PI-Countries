@@ -26,6 +26,8 @@
     margin: auto;
 }
 
+
+
 @media (max-width: 800px) {
     .home{
         display: flex;
@@ -47,5 +49,11 @@
          align-items: center;
          justify-content: center;
          align-content: center;
+    }
+    .paginado {
+        margin-left: 3rem;
+    }
+    .links{
+        display: none;
     }
 }

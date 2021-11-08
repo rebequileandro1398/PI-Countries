@@ -14,3 +14,11 @@
     background-color: #171f228f;
     color: white;
 }
+@media (max-width: 800px) {
+    .pag {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

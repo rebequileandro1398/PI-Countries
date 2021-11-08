@@ -32,7 +32,7 @@
     color: #2c6871;
     margin-left: 15rem;
     margin-top: -1.9rem;
-    text-align: end;
+    text-align: start;
 }
 .button:hover{
     background-color: #729ba7;
