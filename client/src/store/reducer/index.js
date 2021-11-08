@@ -34,8 +34,8 @@ export default function reducer(state = initialState, action) {
             let data
             action.payload === 'max' ? data = state.AuxCountries.sort((a,b)=> a.population < b.population ? 1 : -1 ) :
             action.payload === 'min' ? data = state.AuxCountries.sort((a,b)=> a.population > b.population ? 1 : -1 ) :
-            action.payload === 'asc' ? data = state.AuxCountries.sort((a,z)=> a > z ? 1 : -1 ) :
-            action.payload === 'desc'? data = state.AuxCountries.sort((a,z)=> a < z ? 1 : -1 ) : 
+            action.payload === 'asc' ? data = state.AuxCountries.sort((a,z)=> a.name > z.name ? 1 : -1 ) :
+            action.payload === 'desc'? data = state.AuxCountries.sort((a,z)=> a.name < z.name ? 1 : -1 ) : 
             data = state.AuxCountries
             
             return {

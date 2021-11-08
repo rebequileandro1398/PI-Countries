@@ -1,28 +1,53 @@
+.contLanding{
+    display: flex;
+}
 .landing{
     display: flex;
-    align-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-color: #6b909e69; 
-    padding: 10rem;
-    border-radius: 0.5rem;
-    text-align: center;
-    margin: auto;
-    margin-top: 5rem;
-    backdrop-filter: blur(.5rem);
-    color: #4c666e;
+    color: #2c6871;
+    font-size: 2rem;
+    margin-top: 4rem;
 }
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    height: 90%;
+    margin-top: 2rem;
+}
+
+
+
 .button{
-    background-color: #729ba7;
+    background-color: #729ba700;
     border: none;
     border-radius: 1rem;
     color:#000000;
-    padding: .7rem;
-    margin: 1rem;
+    font-size: 2.5rem;
+    font-weight:600;
+    color: #2c6871;
+    margin-left: 15rem;
+    margin-top: -1.9rem;
+    text-align: end;
 }
 .button:hover{
-    background-color: #171f228f;
-    color: white;
+    background-color: #729ba7;
+    color: rgb(228, 250, 250);
+}
+
+@media (max-width: 800px) {
+    .contLanding{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        width: 80%;
+        height: 80%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
