@@ -7,6 +7,7 @@ import SearchBar from "./SearchBar";
 import Paginado from "./Paginado";
 import getCountries from "../store/actions";
 import styles from './StylesComponents/Home.module.css'
+
 import linkedin from '../img/linkedin.png'
 import github from '../img/github.png'
 
