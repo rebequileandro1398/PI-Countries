@@ -35,9 +35,11 @@
     .filtros{
         display: flex;
     }
-    .span{
-        display: none;
-    }    
+    .button{
+        margin: auto;
+        margin-top: 1rem;
+        font-size: 67%;
+    }
 }
 @media (max-width: 1200px) {
     .span{

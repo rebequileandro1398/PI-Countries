@@ -15,6 +15,7 @@
     text-align: center;
     backdrop-filter: blur(.5rem);
     color: #4c666e;
+    font-size: 1.5rem;
 }
 .select{
     background-color: #729ba7;
