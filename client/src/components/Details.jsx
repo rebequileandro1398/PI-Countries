@@ -22,7 +22,7 @@ export default function Details() {
                             return (
                                 <div key={e.id}>
                                     <h1>{e.name}</h1>  
-                                    <img src={e.flag} alt="image not found" style={{ width: "7em" }} />
+                                    <img src={e.flag} alt="not found" style={{ width: "7em" }} />
                                     <h2>country code: {e.id}</h2>
                                     <h2>capital: {e.capital}</h2>
                                     <h2>subregion: {e.subregion}</h2>

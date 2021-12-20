@@ -37,11 +37,11 @@ export default function Home() {
                  <Filtros/>
             </div>
             <div className={styles.links}>
-                <a href='https://www.linkedin.com/in/leandro-rebequi-a26484187/' target='_blank'>
-                    <img src={linkedin} alt='image not found' style={{width:'2rem'}} />
+                <a href='https://www.linkedin.com/in/leandro-rebequi-a26484187/' target='_blank' rel="noreferrer">
+                    <img src={linkedin} alt='not found' style={{width:'2rem'}} />
                 </a>
-                <a href='https://github.com/rebequileandro1398' target='_blank'>
-                     <img src={github} alt='image not found'style={{width:'2rem'}} />
+                <a href='https://github.com/rebequileandro1398' target='_blank' rel="noreferrer">
+                     <img src={github} alt='not found'style={{width:'2rem'}} />
                 </a>
             </div>
         </div>

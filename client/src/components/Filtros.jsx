@@ -1,12 +1,11 @@
 import { ContinentsFilter, GetAllActivities, SortByName,} from "../store/actions"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch} from "react-redux"
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
 import styles from './Styles/Filtros.module.css'
 export default function Filtros() {
 
     let dispatch = useDispatch()
-    const allActivities = useSelector((state)=> state.allactivities)
     useEffect(() => { dispatch(GetAllActivities())}, [dispatch])
 
     const handleSortByName = e => {

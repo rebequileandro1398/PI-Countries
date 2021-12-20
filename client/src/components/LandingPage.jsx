@@ -13,7 +13,7 @@ export default function LandingPage() {
             </div>
 
             <div className={styles.image}>
-                 <img className={styles.image} src={image} alt="image not found" srcset=""/>
+                 <img className={styles.image} src={image} alt="not found" srcset=""/>
             </div>
     </div>
 }
