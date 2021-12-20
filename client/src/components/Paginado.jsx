@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './StylesComponents/Paginado.module.css'
+import styles from './Styles/Paginado.module.css'
 const Posts = ({postsPerPage, totalPosts, paginado}) => {
 
     const pageNumber = [];

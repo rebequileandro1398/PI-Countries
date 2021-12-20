@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { useParams } from "react-router";
 import { GetActivity } from "../store/actions";
-import styles from './StylesComponents/Activity.module.css'
+import styles from './Styles/Activity.module.css'
 
 export default function Activities() {
 

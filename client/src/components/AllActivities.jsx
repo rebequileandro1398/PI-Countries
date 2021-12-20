@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { GetAllActivities } from "../store/actions"
-import styles from './StylesComponents/TouristActivity.module.css'
+import styles from './Styles/TouristActivity.module.css'
 export default function AllActivities(){
 
     let dispatch = useDispatch()

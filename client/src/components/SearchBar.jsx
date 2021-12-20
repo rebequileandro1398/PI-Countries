@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useDispatch } from "react-redux"
 import { getCountrieByQuery } from "../store/actions"
-import styles from './StylesComponents/SearchBar.module.css'
+import styles from './Styles/SearchBar.module.css'
 
 export default function SearchBar() {
     

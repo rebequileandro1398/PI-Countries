@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import getCountries, { PostActivity } from "../store/actions";
-import styles from './StylesComponents/CreateActivity.module.css'
+import styles from './Styles/CreateActivity.module.css'
 
 
 export function validate(input) {

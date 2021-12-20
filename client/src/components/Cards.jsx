@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from  './StylesComponents/Cards.module.css'
+import styles from  './Styles/Cards.module.css'
 
 
 export default function Cards({img, name, continent, id}) {

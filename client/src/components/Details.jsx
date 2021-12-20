@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { DetailsCountry } from "../store/actions"
 import { useParams } from "react-router-dom";
-import styles from './StylesComponents/Details.module.css'
+import styles from './Styles/Details.module.css'
 export default function Details() {
     
     const dispatch = useDispatch()
