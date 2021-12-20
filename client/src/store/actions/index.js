@@ -6,7 +6,7 @@ import axios from 'axios'
 export default function getCountries() {
     return  async function(dispatch) {
       
-       await axios.get('http://localhost:3001/countries')
+       await axios.get('http://localhost:3001/api/countries')
        .then(data => {
         dispatch({
             type: 'GET_COUNTRY',
@@ -19,7 +19,7 @@ export default function getCountries() {
 export function getCountrieByQuery(search) {
     return  async function(dispatch) {
       
-        await axios.get(`http://localhost:3001/countries?name=${search}`)
+        await axios.get(`http://localhost:3001/api/countries?name=${search}`)
         .then(data => {
             dispatch({
                 type: 'GET_QUERY',
@@ -31,7 +31,7 @@ export function getCountrieByQuery(search) {
 
 export function DetailsCountry(id) {
     return async function(dispatch) {
-        await axios.get(`http://localhost:3001/countries/${id}`)
+        await axios.get(`http://localhost:3001/api/countries/${id}`)
         .then(data => {
             dispatch({
                 type: 'DETAILS',
@@ -56,7 +56,7 @@ export function ContinentsFilter(payload) {
 }
 export function GetAllActivities(){
     return async function(dispatch) {
-        await axios.get('http://localhost:3001/activity')
+        await axios.get('http://localhost:3001/api/activity')
         .then(data => {
             dispatch({
                 type: 'GET_ALL_ACTIVITIES',
@@ -67,7 +67,7 @@ export function GetAllActivities(){
 }
 export function GetActivity(id) {
     return async function(dispatch) {
-        await axios.get(`http://localhost:3001/countries/${id}`)
+        await axios.get(`http://localhost:3001/api/countries/${id}`)
         .then(data => {
             dispatch({
                 type: 'GET_ACTIVITY',
@@ -78,7 +78,7 @@ export function GetActivity(id) {
 }
 export function PostActivity(payload) {
     return async function() {
-        const post =   await axios.post('http://localhost:3001/activity', payload)
+        const post =   await axios.post('http://localhost:3001/api/activity', payload)
         return post;
     }
 }
