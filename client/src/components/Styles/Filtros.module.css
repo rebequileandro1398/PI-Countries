@@ -1,0 +1,48 @@
+.filtros{
+    display: flex;
+}
+
+
+.button{
+    background-color: #729ba7;
+    border: none;
+    border-radius: 1rem;
+    color:#000000;
+    padding: .4rem;
+    margin: 1rem;
+}
+.button:hover{
+    background-color: #171f228f;
+    color: white;
+}
+.textlink{
+    color: inherit;
+    text-decoration: inherit;
+}
+.select{
+    background-color: #729ba7;
+    border: none;
+    border-radius: 1rem;
+    color:#000000;
+    padding: .4rem;
+    margin: 1rem;
+}
+.select:hover{
+    background-color: #171f228f;
+    color: white;
+}
+@media (max-width: 800px) {
+    .filtros{
+        display: flex;
+    }
+    .button{
+        margin: auto;
+        margin-top: 1rem;
+        font-size: 67%;
+    }
+}
+@media (max-width: 1200px) {
+    .span{
+        display: none;
+    }    
+}

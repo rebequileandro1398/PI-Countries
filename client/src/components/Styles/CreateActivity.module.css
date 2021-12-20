@@ -1,0 +1,47 @@
+.CreateActivity{
+    display: flex;
+    flex-direction: column;
+    background-color: #6b909e69; 
+    border-radius: 0.5rem;
+    text-align: center;
+    backdrop-filter: blur(.5rem);
+    color: #4c666e;
+    margin: auto;
+    padding: 4rem;
+    margin-top: 1rem;
+}
+.select{
+    background-color: #729ba7;
+    border: none;
+    border-radius: 1rem;
+    color:#000000;
+    padding: .4rem;
+    margin: 1rem;
+}
+.select:hover{
+    background-color: #171f228f;
+    color: white;
+}
+.input{
+    border: none;
+    background-color: #729ba7;
+    border-radius: 1rem;
+    backdrop-filter: blur(.5rem);
+    padding: .4rem;
+}
+.input:hover{
+    background-color: #171f228f;
+    color: white;
+}
+.button{
+    background-color: #729ba7;
+    border: none;
+    border-radius: 1rem;
+    color:#000000;
+    padding: .4rem;
+    margin: 1rem;
+}
+.button:hover{
+    background-color: #171f228f;
+    color: white;
+}
