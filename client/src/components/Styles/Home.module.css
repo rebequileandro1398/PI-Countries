@@ -8,7 +8,6 @@
     display: flex;
     background-color: #416c7cc7;
     backdrop-filter: blur(.5rem);
-    margin-bottom: 5rem;
 }
 
 .cards {

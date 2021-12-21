@@ -37,7 +37,7 @@ export default function Home() {
                  <Filtros/>
             </div>
             <div className={styles.links}>
-                <a href='https://www.linkedin.com/in/leandro-rebequi-a26484187/' target='_blank' rel="noreferrer">
+                <a href='https://www.linkedin.com/in/leandro-rebequi-dev/' target='_blank' rel="noreferrer">
                     <img src={linkedin} alt='not found' style={{width:'2rem'}} />
                 </a>
                 <a href='https://github.com/rebequileandro1398' target='_blank' rel="noreferrer">
