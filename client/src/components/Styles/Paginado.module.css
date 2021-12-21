@@ -14,6 +14,10 @@
     background-color: #171f228f;
     color: white;
 }
+.button:focus {
+    background-color: #70d2f35b;
+    box-shadow: rgba(0, 27, 58, 0.473) 0px 0px 0px 3px;
+}
 @media (max-width: 800px) {
     .pag {
         display: flex;
