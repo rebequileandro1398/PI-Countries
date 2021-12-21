@@ -75,7 +75,7 @@ const CreateActivity = () => {
             </Link>
                 <div>
                     <label></label>
-                       <select className={styles.select} onChange={(e) => handleSelect(e)} value={[input.country]} name='country'>
+                       <select className={styles.select} onChange={(e) => handleSelect(e)} value={[input.country]} name='country' multiple={true}>
                             <option>select one or more countries:</option>
                            {countries.map(e => (<option key={e.id} value={e.name}>{e.name}</option>))}
                        </select> {errors.country && (<p>{errors.country}</p>)}

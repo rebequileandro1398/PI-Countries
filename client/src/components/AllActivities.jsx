@@ -14,7 +14,6 @@ export default function AllActivities(){
     }
 
     let auxfilter = allActivities.filter(e => e.name === input)
-    console.log(auxfilter[0])
     return(
         <div className={styles.all}>
             <select className={styles.select} value={input} onChange={(e)=> handleChange(e)}>
